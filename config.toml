@@ -1,10 +1,16 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Regression to the mean"
-theme = "hugo-bootstrap-premium-master"
+theme = "blackburn"
+author = "Josep Espasa Reig"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+
+[indexes]
+  tag = "tags"
+  topic = "topics"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
@@ -12,36 +18,52 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [author]
     name = "Josep Espasa Reig"
     email = "jespasareig@gmail.com"
+    
+  [params]
+  # Shown in the home page
+  subtitle = "Data analyses and other things I learned the hard way."
+  brand = "Blog"
+  googleAnalytics = ""
+  disqus = ""
+  # CSS name for highlight.js
+  highlightjs = "androidstudio"
+  dateFormat = "12 Jan 2018, 15:04"
+ 
+ [menu]
+ 
+ [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/"
 
 [[menu.main]]
+    name = "Posts"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 2
+    identifier = "post"
+    url = "/post/"
+ 
+ [[menu.main]]
     name = "About"
-    url = "/about/"
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 3
+    identifier = "about"
+    url = "/about/"   
+    
 [[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/JosepER/"
-[[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/Josepespasa"
+    name = "Contact"
+    pre = "<i class='fa fa-phone fa-fw'></i>"
+    weight = 4
+    url = "/contact/"
 
-[params]
-    description = "A website built through Hugo and blogdown."
-    bootswatchtheme = "paper"
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.11.0"
-    highlightjsCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
-    showRightSidebar = true
-
-    MathJaxCDN = "//cdn.bootcss.com"
-    MathJaxVersion = "2.7.1"
-    github = "https://github.com/JosepER/"
-    linkedin = "https://www.linkedin.com/in/josepespasareig/"
-    twitter = "https://twitter.com/Josepespasa"
-
-    [params.logo]
-    url = "logo.png"
-    width = 50
-    height = 50
-    alt = "Logo"
-
+[social]
+  # Link your social networking accouns to the side menu
+  # by entering your username or ID.
+  twitter = "https://twitter.com/Josepespasa"
+  #facebook = "*"
+ # instagram = "*"
+  github = "https://github.com/JosepER/"
+ # stackoverflow = "*"
+  linkedin = "https://www.linkedin.com/in/josepespasareig/"
