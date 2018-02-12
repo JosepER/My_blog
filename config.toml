@@ -2,7 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Regression to the mean"
 theme = "blackburn"
-author = "Josep Espasa Reig"
+#author = "JosepER"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -21,7 +21,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     
   [params]
   # Shown in the home page
-  subtitle = "Data analyses and other things I learned the hard way."
+  subtitle = "My blog for data analysis and other things I learned the hard way."
   brand = "Blog"
   googleAnalytics = ""
   disqus = ""
