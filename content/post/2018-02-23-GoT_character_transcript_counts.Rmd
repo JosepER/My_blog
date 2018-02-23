@@ -1,0 +1,20 @@
+---
+title: "Analysing GoT transcripts (1)"
+subtitle: 'And the main character is...'
+output:
+  html_document:
+    df_print: paged
+editor_options:
+  chunk_output_type: inline
+---
+
+**Introduction**
+Game of Thrones is a ruthless, unpredictable and 
+
+
+
+
+```{r}
+
+```
+
