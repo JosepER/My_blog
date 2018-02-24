@@ -22,25 +22,5 @@
       <description>Hello! This is a test blog post.</description>
     </item>
     
-    <item>
-      <title>Analysing GoT scripts (1)</title>
-      <link>/1/01/01/analysing-got-scripts-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jespasareig@gmail.com (Josep Espasa Reig)</author>
-      <guid>/1/01/01/analysing-got-scripts-1/</guid>
-      <description>Introduction something about GoT/what is GoT?
-My main reason to love Game of Thrones is that is a serie with ruthless and unpredictable narratives. It shows a world with a large amount of rich and absorbing characters that are always on the edge between life and death.
-Criticism however, has sparked after the last two seasons1. The show seems to have become more fast-paced, spending less time in slowly-building complex stories and more in action-like scenes.</description>
-    </item>
-    
-    <item>
-      <title>Analysing GoT transcripts (1)</title>
-      <link>/1/01/01/analysing-got-transcripts-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jespasareig@gmail.com (Josep Espasa Reig)</author>
-      <guid>/1/01/01/analysing-got-transcripts-1/</guid>
-      <description>Introduction Game of Thrones is a ruthless, unpredictable and</description>
-    </item>
-    
   </channel>
 </rss>
