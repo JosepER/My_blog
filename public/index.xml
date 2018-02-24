@@ -28,9 +28,39 @@
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
       <author>jespasareig@gmail.com (Josep Espasa Reig)</author>
       <guid>/about/</guid>
-      <description>Welcome to my blog! My name is Josep Espasa and I&amp;rsquo;m a London-based data analyst currently working as a Senior Statistician at (NatCen)[&amp;ldquo;http://natcen.ac.uk/&amp;quot;].
-#About This Site This blog is built with (blogdown)[&amp;ldquo;https://github.com/rstudio/blogdown&amp;quot;] and (Hugo)[&amp;ldquo;https://gohugo.io/&amp;quot;] using the (Blackburn)[&amp;ldquo;https://github.com/yoshiharuyamashita/blackburn&amp;quot;] theme.
-All blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License All opinions and views are my own and do not represent my employer.</description>
+      <description>Welcome to my blog! My name is Josep Espasa and I&amp;rsquo;m a London-based data analyst currently working as a Senior Statistician at [NatCen](&amp;ldquo;http://natcen.ac.uk/&amp;quot;). Passionate about data, R enthusiast and occasional Lindy-Hopper. We might have crossed paths at a [LondonR](&amp;ldquo;www.londonr.org/&amp;rdquo;) meeting or a [RSS](&amp;ldquo;https://www.rss.org.uk&amp;quot;) event.
+About This Site
+This blog is built with [blogdown](&amp;ldquo;https://github.com/rstudio/blogdown&amp;quot;) and [Hugo](&amp;ldquo;https://gohugo.io/&amp;quot;) using the [Blackburn](&amp;ldquo;https://github.com/yoshiharuyamashita/blackburn&amp;quot;) theme.
+All blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jespasareig@gmail.com (Josep Espasa Reig)</author>
+      <guid>/about/</guid>
+      <description>About mecode{white-space: pre;}pre:not([class]) {background-color: white;}if (window.hljs) {hljs.configure({languages: []});hljs.initHighlightingOnLoad();if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) {window.setTimeout(function() { hljs.initHighlighting(); }, 0);}}h1 {font-size: 34px;}h1.title {font-size: 38px;}h2 {font-size: 30px;}h3 {font-size: 24px;}h4 {font-size: 18px;}h5 {font-size: 16px;}h6 {font-size: 12px;}.</description>
+    </item>
+    
+    <item>
+      <title>Analysing GoT scripts (1)</title>
+      <link>/1/01/01/analysing-got-scripts-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jespasareig@gmail.com (Josep Espasa Reig)</author>
+      <guid>/1/01/01/analysing-got-scripts-1/</guid>
+      <description>Introduction something about GoT/what is GoT?
+My main reason to love Game of Thrones is that is a serie with ruthless and unpredictable narratives. It shows a world with a large amount of rich and absorbing characters that are always on the edge between life and death.
+Criticism however, has sparked after the last two seasons1. The show seems to have become more fast-paced, spending less time in slowly-building complex stories and more in action-like scenes.</description>
+    </item>
+    
+    <item>
+      <title>Analysing GoT transcripts (1)</title>
+      <link>/1/01/01/analysing-got-transcripts-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jespasareig@gmail.com (Josep Espasa Reig)</author>
+      <guid>/1/01/01/analysing-got-transcripts-1/</guid>
+      <description>Introduction Game of Thrones is a ruthless, unpredictable and</description>
     </item>
     
   </channel>

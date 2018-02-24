@@ -64,6 +64,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   twitter = "https://twitter.com/Josepespasa"
   #facebook = "*"
  # instagram = "*"
-  github = "https://github.com/JosepER/"
+  github = "JosepER/"
  # stackoverflow = "*"
   linkedin = "https://www.linkedin.com/in/josepespasareig/"
