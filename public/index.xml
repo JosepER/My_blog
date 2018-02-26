@@ -28,9 +28,9 @@
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
       <author>jespasareig@gmail.com (Josep Espasa Reig)</author>
       <guid>/about/</guid>
-      <description>Welcome to my blog! My name is Josep Espasa and I&amp;rsquo;m a London-based data analyst currently working as a Senior Statistician at [NatCen](&amp;ldquo;http://natcen.ac.uk/&amp;quot;). Passionate about data, R enthusiast and occasional Lindy-Hopper. We might have crossed paths at a [LondonR](&amp;ldquo;www.londonr.org/&amp;rdquo;) meeting or a [RSS](&amp;ldquo;https://www.rss.org.uk&amp;quot;) event.
+      <description>Welcome to my blog! My name is Josep Espasa and I&amp;rsquo;m a London-based data analyst currently working as a Senior Statistician at NatCen. Passionate about data, R enthusiast and occasional Lindy-Hopper. We might have crossed paths at a LondonR meeting or a RSS event.
 About This Site
-This blog is built with [blogdown](&amp;ldquo;https://github.com/rstudio/blogdown&amp;quot;) and [Hugo](&amp;ldquo;https://gohugo.io/&amp;quot;) using the [Blackburn](&amp;ldquo;https://github.com/yoshiharuyamashita/blackburn&amp;quot;) theme.
+This blog is built with blogdown and Hugo using the Blackburn theme.
 All blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License.</description>
     </item>
     
