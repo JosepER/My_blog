@@ -33,7 +33,6 @@ Therefore in this first post I tried to:
 1. Look at the number of times characters participated in script converations. 
 2. Give a glimse at the frequency and distribution of conversations in the scripts and how these evolve across seasons.
 
-**TO DO: summary of findings here**
 A short summary of what I found is:
 
 * There seem to be pattern changes in the 7th season scripts. Less characters participate in this season and the number of less important characters is reduced drastically. At the same time, most prominent characters gained weight in the scripts.
@@ -73,10 +72,10 @@ _Figure 1_
 #to do: change theme in original shiny app and GoT_public
 #to do: tweak a bit more to reduce space for labels
 
-read_rds("C:/Users/josep/Desktop/R/GoT/output_articles/static_shiny_graph_16.rds")
+#read_rds("C:/Users/josep/Desktop/R/GoT/output_articles/static_shiny_graph_16.rds")
 
-#shinyAppDir(appDir = "C:/Users/josep/Desktop/R/GoT_public/18_GoT_characters_appearances/",
- #           options = list(width = "120%", height = 600))
+shinyAppDir(appDir = "https://bookdown.org/content/1227/",
+            options = list(width = "120%", height = 600))
 
 ```
 
