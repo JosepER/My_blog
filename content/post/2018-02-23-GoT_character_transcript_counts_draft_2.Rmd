@@ -79,7 +79,7 @@ shinyAppDir(appDir = "https://bookdown.org/content/1227/",
 
 ```
 
-<iframe src="https://bookdown.org/content/1227/"></iframe>
+<iframe src="https://bookdown.org/content/1227/" width="740" height="740"> </iframe>
 
 ### 7th season, what changed? {#changes_in_patterns}
 
