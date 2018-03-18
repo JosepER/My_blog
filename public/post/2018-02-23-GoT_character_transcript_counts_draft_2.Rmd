@@ -1,0 +1,184 @@
+---
+title: "You didn't like the 7th season of GoT? This might be why"
+subtitle: 'My analyses of GoT scripts (1)'
+output:
+  html_document: default
+---
+
+```{r, echo = FALSE, warning=FALSE, message=FALSE}
+
+library(knitr)
+library(plotly)
+library(shiny)
+library(tidyverse)
+
+input_list_16 <- read_rds("C:/Users/josep/Desktop/R/GoT/output_articles/output_list_16.rds")
+
+input_list_17 <- read_rds("C:/Users/josep/Desktop/R/GoT/interim_output/shiny_app/export_for_shiny_17.rds")
+
+options(knitr.kable.NA = '')
+
+```
+
+### Introduction
+
+My main reason to love Game of Thrones (GoT) is that is a serie with ruthless and unpredictable narratives. It shows a world with a large amount of rich and absorbing characters that are always on the edge between life and death. 
+
+Criticism  sparked after the last two seasons were aired[^1]. The show seems to have become more fast-paced, spending less time in slowly-building complex stories and more in action-like scenes. This is especially true for the seventh season, which had less episodes (7 instead of previous 10) of slightly longer duration and depicted many gigantic battle scenes. Some reviews have also said that the 'body count' in this (currently) last season has exclusively come from unknown or rather less important characters and that almost every main character seems to have now a "plot armor"[^2]. This might have got to a point where deaths don't appear tragic any more as espectators empathise less with characters.
+
+In this series of posts I will try to explore if these changes can be seen in (unoficial) GoT scripts. I will first start with this post analysing counts of character appearances in conversations and how these evolved in the last season. The importance and number of characters involved in script lines as well as the total number of conversations could give us a hint about the trend of the series. For example, observing that a smaller number of characters take on a larger part of the script could mean that the script-writers decided to avoid more complex stories and decided to focus on a small group of main characters. Similarly, a smaller number of conversation lines in scripts could mean more action scenes and less dialogues. 
+
+Therefore in this first post I tried to:
+
+1. Look at the number of times characters participated in script converations. 
+2. Give a glimse at the frequency and distribution of conversations in the scripts and how these evolve across seasons.
+
+**TO DO: summary of findings here**
+A short summary of what I found is:
+
+* There seem to be pattern changes in the 7th season scripts. Less characters participate in this season and the number of less important characters is reduced drastically. At the same time, most prominent characters gained weight in the scripts.
+* This doesn't seem to be directly related to the 7th season having less episodes than the others nor to a shortage of alive characters after six seasons of massive carnage.
+
+In future posts I intend examine the relation between the importance of characters and the probability of being killed with emphasis on how this relation might have changed in the last seasons.
+
+Needless to say, **this post contains spoilers**. If you haven't watched the whole series up until (and including) the seventh season and you intend to do so, you might want to stop reading this post.
+
+
+### Similar articles and data sources
+
+Yes, this is yet another post about Game of Thrones! Data analyses of the series have been already produced rather extensively. My analysis here applies methods already used by [Gokhan Ciflikli](https://www.gokhanciflikli.com/post/game-of-thrones/), [Andrew Beveridge and Jie Shan](https://networkofthrones.wordpress.com/) and by [Milan Janosov](https://cns.ceu.edu/article/2017-07-08/network-science-predicts-who-dies-next-game-thrones). Techniques used by the later are also (very) close to those used by [Clement Fredembach](http://blogs.teradata.com/international/whos-next-predicting-deaths-part-1/). Similarly, many other articles about the series can be found online[^3].
+
+This post and the forthcoming ones intend to address different questions with a distinct approach. Here I will be less concerned about predictions (e.g. probability of characters dying) and more about descriptions and explanations on what might have changed in the series.
+
+The data for this post comes from (unoficial) GoT scripts which were manually transcribed[^4]. To my knowledge, the people that transcribed the scripts are volunteers and so all the credit for this post goes to them. The (unoficial) scripts have, however, many missing episodes. These comprise most of the second and third seasons as well as some episodes of the fourth. In total, I could only use 43 out of the current 67 episodes scripts, as 22 episodes missed scripts and 2 non-missing scripts had no names to identify the lines of people talking. 
+
+I complemented the information from the scripts with data from IMDb[^5]. IMDb data tells if a character from the cast appeared in a certain episode. Appearing in the cast does not mean, however, that the character necessarily appeared in the scripts. Characters in the cast that don't participate in dialogues don't appear in the unofficial scripts used in this post. To standarise names of characters I used the wikipedia list of GoT characters[^6].
+
+All computations done (and even some still to do) can be found on [this Github repository](https://github.com/JosepER/GoT_public). 
+
+
+### And the main character is...
+
+First, let's take a look at how many times each character participates in script dialogues[^6]. Unsurprisingly, i Ned Stark appears to be (by far) the main character until his death at the end of the first season. As _Figure 1_ below shows, right before his death, Ned accounted for approximately 12.5% of script participations of all alive characters [^7]. Then, Tyrion Lannister takes the main role of the series and keeps it until the end of the seventh season with approximately 10% of all participations in the script. Jon Snow and Cersei compete for the third place, each with ~7% of all dialogues. 
+
+While most characters appear to have the same importance during the whole series, certain characters have a raising importance. This is especially true in the 7th season, where the protagonism of main characters such as Jon Snow, Daenerys, Sansa and Jaimie Lanister raises quickly. This is related to what I explain in [the next section](#changes_in_patterns). The scripts also show a curious pattern of charaters with short fast rise and immediate death such as Ramsay Bolton and Stanis. 
+
+_Figure 1_ can be used to obtain more information on appearances of individual characters. Use the manual function of the Shiny app below and type in their names. Rembember however that valid scripts for most episodes for season 2, 3 and 4, plus the last episode of season 7 were not available.
+
+_Figure 1_
+**TO DO: link this to the shiny app**
+```{r, eval = FALSE,echo = FALSE}
+
+#to do: check if it works online!
+#to do: change theme in original shiny app and GoT_public
+#to do: tweak a bit more to reduce space for labels
+
+read_rds("C:/Users/josep/Desktop/R/GoT/output_articles/static_shiny_graph_16.rds")
+
+#shinyAppDir(appDir = "C:/Users/josep/Desktop/R/GoT_public/18_GoT_characters_appearances/",
+ #           options = list(width = "120%", height = 600))
+
+```
+
+
+### 7th season, what changed? {#changes_in_patterns}
+
+The main difference between the first 6 seasons and the 7th one, appears to be the number of characters that participate in each season and the importance of main characters. This might explain the perceived increase in pace and reduction in depth of stories mentioned at the beginning of this post.
+
+To make a shorter season (i.e. 7 episodes instead of the previous 6), script-writters seem to have opted for cutting-off the number of secondary characters while retaining (and even increasing) the number and prevalence of main ones.
+
+Doing a quick exploration we can see that the number of characters that appear in each episode seems to decrease in the 7th season (see _Figure 2_ below). Even if the exact amount of characters in each episode varies greatly across episodes, there seems to be a drop in season 7 from the trend around 30 characters participating in episode scripts in the first 6 seasons. This downward direction is observed using both the script participations and IMDb cast data. Aggregating the data at season level (shown in _Table 1_), the decrease in the number of characters is even more evident. Season 7 has 60 unique characters in the IMDb data. This is below the other seasons, which range from 102 to 134. Similarly, season 7 also appears to have a smaller number of unique characters (47) in the scripts than any other season analysed. As explained [in another section below](#shorter_season), this doesn't seem to be exclusively related to the fact that the 7th season has less episodes.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE}
+
+ggplotly(input_list_16$graph_character_appearances_episode)
+
+```
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE}
+
+input_list_16$table_characters_season %>% 
+  knitr::kable(col.names = c("Season", "Distinc characters in IMDb", "Distinct characters in scipts"), 
+               caption = "Table 1: Number of distinct characters that participated in each season.",
+               align = c('l', 'c', 'c'))
+
+```
+
+*Note: Estimates for seasons 2, 3 and 4 from scripts were not computed because of the small number of scripts available for these seasons.*
+
+This reduction in the diversity of characters in season 7 appears to be mostly a cut in less important characters (i.e. characters with less participations). While other seasons had between 44 and 70 characters with an average of less than 3 participations in dialogues per episode, season 7 has merely 23 ( _Figure 3_ ) [^8]. In relative terms this is a change from 70% of all characters having less than 3 appearances in season 6 to only 49% in season 7. The number of very important characters, reflected on those which averaged more than 15 script appearances, rose from a maximum of 3 in previous seasons to 7 in the 7th season. Taking into account the reduced number of roles in this last season, this represents an increase from a maximum of around 4% of characters having more than 15 script appearances per episode (in seasons 1 and 5) to almost 15% in the 7th season. Thus, while there was an overall reduction in the number of characters in the 7th season, the number of very prominent characters almost tripled in the same season.
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE}
+
+ggplotly(input_list_16$graph_number_char_mean_appearances_categories_season)
+
+```
+
+This fact of having a larger number of prominent characters and many less in secondary roles in the last 7th season, together with less overall script appearances resulted in much more unequally distributed scripts. A few characters lead the dialogues and there was a discontinuity with the more spread scripts from the previous seasons. As  _Figure 4_ shows, in season 7 a small number of characters accounted for a much larger proportion of all scritp appearances.For example, the 10 characters with more counts in season 7 accounted for ~63% of all script appearances. In other seasons the same proportion ranged between 40% (season 6) and 48% (season 1). Similarly, the top 5 characters accumulated 40% of all script participations, while in other seasons they accounted for a maximum of 30%. Thus, the importance of the top 5 and top 10 characters in number of script appearances grew by at least one third when compared to other seasons. 
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+ggplotly(input_list_16$graph_prop_most_important_characters_season)
+
+```
+
+# Why these changes?
+
+##Just a shorter season?{#shorter_season}
+
+Are these changes merely a product of having a shorter season? Would we see a a smaller number of characters and more prominence of lead roles in seasons 1 to 6 if these were shorter? To check this hypotheses, I simulated 6 episodes seasons from the script data for seasons 1, 5 and 6 and compared the results with the actual (and also simulated) script data of season 7. Here I use a 6 episode season for the simulation because at the time of writting this post we only have 6 valid scripts for the 7th season (i.e. we are missing the script for the last episode). For simulating the shorter seasons I basically re-sampled 6 episodes within each of these seasons (with replacement) and then re-sampled the original appearances within them [^10].
+
+Even when cutting other seasons to have only 6 episodes, season 7 appears to have many less participating characters. This can be seen in _Figure 5_ where we can observe the aggregated results from the simulations. With 6 episodes, season 5 would tend to have around 60 characters participating instead of the actual 72 that we counted from the 10 episodes scripts ( _Table 1_ above). Similarly, depending on the re-sampled episodes in the simulations and excluding the 5% most extreme results, we see that with only 6 episodes, season 5 would most likely have between 52 and 67 characters. Even if season 2 is the season with the lowest estimated characters in the 6 episodes simulations, it's estimates fall far away from the 47 characters counted in season 7 scripts. Thus, the simple fact of the 7th season being shorter might not explain the differences observed in number of participating characters[^11]. 
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+ggplotly(input_list_16$graph_resample_total_appearances_season)
+
+```
+
+The lower number of episodes in season 7 doesn't seem to explain the larger imbalances on character weights within the scripts neither. If we use the same resamples simulating shorter seasons, the proportion of script participations of the most important characters is still way larger than in other seasons. For example, the top 5 most important characters in season 7 have a median of ~43% of all script participations accross resamples ( _Figure 6_). This is almost 1.3 times the proportion in other seasons (i.e. ~31% in seasons 1 and 5). A similar ratio is also observed for top 10 and top 15 characters.   
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+input_list_16$graph_resample_prop_most_important_characters_season
+
+```
+
+##Are all characters already dead?
+
+Hold on! It might well be that all characters are already dead and buried by the time the 7th season aired. This would have lead to a smaller pool of alive (and non-resurrected) characters available to script-writters. To check this I used the IMDB cast data [^5] to examine in which episode each character first appeared and compared it to count of deaths in each episode. The result can be seen in _Figure 7_ below. The pool of alive characters seems to be actually higher in the 7th season than in any previous one. As one would expect, many characters are introduced in season 1. Then there is a constant trend of ~4 new characters per episode for all seasons except the 7th, which seems to introduce many less new characters in each episode. Until the end of the sixth season, the trend of new appearing characters seems to always be above the trend for deaths, leaving an approximate number of 170 (suposedly) alive characters at the start of the 7th season. 
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+input_list_16$graph_number_alive_characters_episode
+
+```
+
+
+** TO DO:**
+Make sure that I made it clear that I'm counting the number of times a character speaks!
+
+**footnotes**
+
+[^1]: See for example [this article](https://www.theguardian.com/tv-and-radio/2017/aug/21/game-of-thrones-the-best-show-on-tv-just-became-the-silliest), [this one](https://www.theguardian.com/tv-and-radio/2017/jul/24/when-good-tv-goes-bad-game-of-thrones) or [this one](http://theweek.com/articles/719732/game-thrones-become-terrible-show). 
+[^2]: http://uk.ign.com/articles/2017/09/03/game-of-thrones-season-7-review
+[^3]: See for example this other network analysis performed by [Shirin Glander](https://shiring.github.io/networks/2017/05/15/got_final) or the articles produced using screen time of main characters the data that an IMDB user manually collected. An article using that data can be found [here](https://winteriscoming.net/2017/10/19/chart-screentime-game-of-thrones-top-100-characters/). The original data seems to have been deleted from the IMDB webpage but still remains available [here](https://shiring.github.io/networks/2017/05/15/got_final). 
+[^4]: See scripts for:
+1. Season one [here](https://genius.com/albums/Game-of-thrones/Season-1-scripts) 
+2. Season two (incomplete) [here](https://genius.com/albums/Game-of-thrones/Season-2-scripts)
+3. Season three (incomplete) [here](https://genius.com/albums/Game-of-thrones/Season-3-scripts);
+4. Season four (incomplete) [here](https://genius.com/albums/Game-of-thrones/Season-4-scripts);
+5. Season five [here](https://genius.com/albums/Game-of-thrones/Season-5-scripts);
+6. Season six [here](https://genius.com/albums/Game-of-thrones/Season-6-scripts);
+7. Season seven (incomplete) [here](https://genius.com/albums/Game-of-thrones/Season-7-scripts).
+Finally, all deaths of characters should be [here](https://genius.com/Screen-genius-list-of-game-of-thrones-deaths-annotated).
+[^5]: See for example the IMDb data for the first episode [here](http://www.imdb.com/title/tt1480055/?ref_=ttep_ep1)
+[^6]: This list can be found [here](https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_characters)
+[^7]: This is, the number of times they appear to speak.
+[^8]: _Figure 1_ shows the proportion of accumulated participations of alive characters in scripts. This is, once a character dies, his/her accumulated participations are removed from the total count. The exact computations can be seen in [script 12 the project](https://github.com/JosepER/GoT_public)  
+[^9]: Notice that I merged seasons 2 to 4 as we only have a total of 6 observed episodes in these three seasons. This fact, combined with the 'within season' patterns [later explained](#within_seasons), mean that estimates for these pooled seasons should be taken with a grain of salt.
+[^10]: This is, I applied bootstrap in the following way: I re-sampled 6 episodes of seasons 1, 5, 6 and 7 6,000 times, and then, for each of the 24,000 episodes in the re-sample I re-sampled the characters appearing in their scripts. The whole process can be seen in section 'Re-samples of episodes' of [script 16 of the project](https://github.com/JosepER/GoT_public).
+[^11]: I think that to actually test a null hypothesis stating that the difference between the number of characters that appear in two seasons is 0 we would have to resample the difference. This is done in section *Test differences in re-sampled samples between season 7 and other seasons* of [script 16 of the project](https://github.com/JosepER/GoT_public).
+
