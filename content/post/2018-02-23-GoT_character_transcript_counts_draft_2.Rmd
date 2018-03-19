@@ -77,7 +77,7 @@ shinyAppDir(appDir = "https://josep-espasa.shinyapps.io/18_GoT_characters_appear
 
 ```
 
-<iframe src="https://bookdown.org/content/1227/" width="1200" height="740"> </iframe>
+<iframe src="https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/" width="1200" height="740"> </iframe>
 
 ### 7th season, what changed? {#changes_in_patterns}
 
