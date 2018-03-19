@@ -65,7 +65,6 @@ While most characters appear to have the same importance during the whole series
 _Figure 1_ can be used to obtain more information on appearances of individual characters. Use the manual function of the Shiny app below and type in their names. Rembember however that valid scripts for most episodes for season 2, 3 and 4, plus the last episode of season 7 were not available.
 
 _Figure 1_
-**TO DO: link this to the shiny app**
 ```{r, eval = FALSE,echo = FALSE}
 
 #to do: check if it works online!
@@ -89,17 +88,18 @@ To make a shorter season (i.e. 7 episodes instead of the previous 6), script-wri
 
 Doing a quick exploration we can see that the number of characters that appear in each episode seems to decrease in the 7th season (see _Figure 2_ below). Even if the exact amount of characters in each episode varies greatly across episodes, there seems to be a drop in season 7 from the trend around 30 characters participating in episode scripts in the first 6 seasons. This downward direction is observed using both the script participations and IMDb cast data. Aggregating the data at season level (shown in _Table 1_), the decrease in the number of characters is even more evident. Season 7 has 60 unique characters in the IMDb data. This is below the other seasons, which range from 102 to 134. Similarly, season 7 also appears to have a smaller number of unique characters (47) in the scripts than any other season analysed. As explained [in another section below](#shorter_season), this doesn't seem to be exclusively related to the fact that the 7th season has less episodes.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE, out.size = '120%'}
 
 ggplotly(input_list_16$graph_character_appearances_episode)
 
 ```
 
 
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE}
 
 input_list_16$table_characters_season %>% 
-  knitr::kable(col.names = c("Season", "Distinc characters in IMDb", "Distinct characters in scipts"), 
+  knitr::kable(col.names = c("Season", "Characters IMDb", "Characters scipts"), 
                caption = "Table 1: Number of distinct characters that participated in each season.",
                align = c('l', 'c', 'c'))
 
@@ -110,7 +110,7 @@ input_list_16$table_characters_season %>%
 This reduction in the diversity of characters in season 7 appears to be mostly a cut in less important characters (i.e. characters with less participations). While other seasons had between 44 and 70 characters with an average of less than 3 participations in dialogues per episode, season 7 has merely 23 ( _Figure 3_ ) [^8]. In relative terms this is a change from 70% of all characters having less than 3 appearances in season 6 to only 49% in season 7. The number of very important characters, reflected on those which averaged more than 15 script appearances, rose from a maximum of 3 in previous seasons to 7 in the 7th season. Taking into account the reduced number of roles in this last season, this represents an increase from a maximum of around 4% of characters having more than 15 script appearances per episode (in seasons 1 and 5) to almost 15% in the 7th season. Thus, while there was an overall reduction in the number of characters in the 7th season, the number of very prominent characters almost tripled in the same season.
 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE, out.size = '120%'}
 
 ggplotly(input_list_16$graph_number_char_mean_appearances_categories_season)
 
@@ -118,7 +118,7 @@ ggplotly(input_list_16$graph_number_char_mean_appearances_categories_season)
 
 This fact of having a larger number of prominent characters and many less in secondary roles in the last 7th season, together with less overall script appearances resulted in much more unequally distributed scripts. A few characters lead the dialogues and there was a discontinuity with the more spread scripts from the previous seasons. As  _Figure 4_ shows, in season 7 a small number of characters accounted for a much larger proportion of all scritp appearances.For example, the 10 characters with more counts in season 7 accounted for ~63% of all script appearances. In other seasons the same proportion ranged between 40% (season 6) and 48% (season 1). Similarly, the top 5 characters accumulated 40% of all script participations, while in other seasons they accounted for a maximum of 30%. Thus, the importance of the top 5 and top 10 characters in number of script appearances grew by at least one third when compared to other seasons. 
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, out.size = '120%'}
 
 ggplotly(input_list_16$graph_prop_most_important_characters_season)
 
@@ -132,7 +132,7 @@ Are these changes merely a product of having a shorter season? Would we see a a 
 
 Even when cutting other seasons to have only 6 episodes, season 7 appears to have many less participating characters. This can be seen in _Figure 5_ where we can observe the aggregated results from the simulations. With 6 episodes, season 5 would tend to have around 60 characters participating instead of the actual 72 that we counted from the 10 episodes scripts ( _Table 1_ above). Similarly, depending on the re-sampled episodes in the simulations and excluding the 5% most extreme results, we see that with only 6 episodes, season 5 would most likely have between 52 and 67 characters. Even if season 2 is the season with the lowest estimated characters in the 6 episodes simulations, it's estimates fall far away from the 47 characters counted in season 7 scripts. Thus, the simple fact of the 7th season being shorter might not explain the differences observed in number of participating characters[^11]. 
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, out.size = '120%'}
 
 ggplotly(input_list_16$graph_resample_total_appearances_season)
 
@@ -140,7 +140,7 @@ ggplotly(input_list_16$graph_resample_total_appearances_season)
 
 The lower number of episodes in season 7 doesn't seem to explain the larger imbalances on character weights within the scripts neither. If we use the same resamples simulating shorter seasons, the proportion of script participations of the most important characters is still way larger than in other seasons. For example, the top 5 most important characters in season 7 have a median of ~43% of all script participations accross resamples ( _Figure 6_). This is almost 1.3 times the proportion in other seasons (i.e. ~31% in seasons 1 and 5). A similar ratio is also observed for top 10 and top 15 characters.   
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, out.size = '120%'}
 
 input_list_16$graph_resample_prop_most_important_characters_season
 
@@ -150,7 +150,7 @@ input_list_16$graph_resample_prop_most_important_characters_season
 
 Hold on! It might well be that all characters are already dead and buried by the time the 7th season aired. This would have lead to a smaller pool of alive (and non-resurrected) characters available to script-writters. To check this I used the IMDB cast data [^5] to examine in which episode each character first appeared and compared it to count of deaths in each episode. The result can be seen in _Figure 7_ below. The pool of alive characters seems to be actually higher in the 7th season than in any previous one. As one would expect, many characters are introduced in season 1. Then there is a constant trend of ~4 new characters per episode for all seasons except the 7th, which seems to introduce many less new characters in each episode. Until the end of the sixth season, the trend of new appearing characters seems to always be above the trend for deaths, leaving an approximate number of 170 (suposedly) alive characters at the start of the 7th season. 
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, out.size = '120%'}
 
 input_list_16$graph_number_alive_characters_episode
 
