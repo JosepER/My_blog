@@ -75,9 +75,23 @@ _Figure 1_ can be used to obtain more information on appearances of individual c
 shinyAppDir(appDir = "https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/",
             options = list(width = "120%", height = 600))
 
+#<iframe src="https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/" width="1200" height="740"> </iframe>
+
 ```
 
-<iframe src="https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/" width="1200" height="740"> </iframe>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.16/iframeResizer.min.js"></script>
+<style>
+  iframe {
+    min-width: 100%;
+  }
+</style>
+<iframe id="myIframe" src="https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/" scrolling="no" frameborder="no"></iframe>
+<script>
+  iFrameResize({
+    heightCalculationMethod: 'taggedElement'
+  });
+</script>
 
 ### 7th season, what changed? {#changes_in_patterns}
 
