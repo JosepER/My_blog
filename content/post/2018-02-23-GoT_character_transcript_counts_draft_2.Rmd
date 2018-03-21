@@ -7,6 +7,7 @@ output:
 
 ```{r, echo = FALSE, warning=FALSE, message=FALSE}
 
+library(DT)
 library(knitr)
 library(plotly)
 library(shiny)
@@ -95,7 +96,7 @@ shinyAppDir(appDir = "https://josep-espasa.shinyapps.io/18_GoT_characters_appear
 
 ```
 
-<iframe src="https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/" width="1024" height="633"> </iframe>
+<iframe src="https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/" width="1024" height="900"> </iframe>
 
 ### 7th season, what changed? {#changes_in_patterns}
 
@@ -113,13 +114,14 @@ ggplotly(input_list_16$graph_character_appearances_episode)
 
 
 
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE}
 
 input_list_16$table_characters_season %>% 
-  knitr::kable(col.names = c("Season", "Characters IMDb", "Characters scipts"), 
-               caption = "Table 1: Number of distinct characters that participated in each season.",
-               align = c('l', 'c', 'c'))
-
+  datatable(colnames = c("Season", "Characters IMDb", "Characters scipts"),
+            style = "bootstrap",
+            caption = "Table 1: Number of distinct characters that participated in each season.")
+  
 ```
 
 *Note: Estimates for seasons 2, 3 and 4 from scripts were not computed because of the small number of scripts available for these seasons.*
