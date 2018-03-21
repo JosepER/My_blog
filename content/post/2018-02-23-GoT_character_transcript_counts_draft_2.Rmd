@@ -14,7 +14,7 @@ library(tidyverse)
 
 input_list_16 <- read_rds("C:/Users/josep/Desktop/R/GoT/output_articles/output_list_16.rds")
 
-input_list_17 <- read_rds("C:/Users/josep/Desktop/R/GoT/interim_output/shiny_app/export_for_shiny_17.rds")
+input_list_17 <- read_rds("C:/Users/josep/Desktop/R/GoT/18_GoT_characters_appearances/export_for_shiny_17.rds")
 
 options(knitr.kable.NA = '')
 
@@ -75,11 +75,11 @@ _Figure 1_ can be used to obtain more information on appearances of individual c
 shinyAppDir(appDir = "https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/",
             options = list(width = "120%", height = 600))
 
+#1
 #<iframe src="https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/" width="1200" height="740"> </iframe>
 
-```
 
-
+#2
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.16/iframeResizer.min.js"></script>
 <style>
   iframe {
@@ -92,6 +92,10 @@ shinyAppDir(appDir = "https://josep-espasa.shinyapps.io/18_GoT_characters_appear
     heightCalculationMethod: 'taggedElement'
   });
 </script>
+
+```
+
+<iframe src="https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/" width="1024" height="633"> </iframe>
 
 ### 7th season, what changed? {#changes_in_patterns}
 
