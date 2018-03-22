@@ -63,38 +63,8 @@ First, let's take a look at how many times each character participates in script
 
 While most characters appear to have the same importance during the whole series, certain characters have a raising importance. This is especially true in the 7th season, where the protagonism of main characters such as Jon Snow, Daenerys, Sansa and Jaimie Lanister raises quickly. This is related to what I explain in [the next section](#changes_in_patterns). The scripts also show a curious pattern of charaters with short fast rise and immediate death such as Ramsay Bolton and Stanis. 
 
-_Figure 1_ can be used to obtain more information on appearances of individual characters. Use the manual function of the Shiny app below and type in their names. Rembember however that valid scripts for most episodes for season 2, 3 and 4, plus the last episode of season 7 were not available.
+_Figure 1_ can be used to obtain more information on appearances of individual characters. [Here](https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/) Use the manual function of the Shiny app below and type in their names. Rembember however that valid scripts for most episodes for season 2, 3 and 4, plus the last episode of season 7 were not available.
 
-```{r, eval = FALSE,echo = FALSE}
-
-#to do: check if it works online!
-#to do: change theme in original shiny app and GoT_public
-#to do: tweak a bit more to reduce space for labels
-
-#read_rds("C:/Users/josep/Desktop/R/GoT/output_articles/static_shiny_graph_16.rds")
-
-shinyAppDir(appDir = "https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/",
-            options = list(width = "120%", height = 600))
-
-#1
-#<iframe src="https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/" width="1200" height="740"> </iframe>
-
-
-#2
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.16/iframeResizer.min.js"></script>
-<style>
-  iframe {
-    min-width: 130%;
-  }
-</style>
-<iframe id="myIframe" src="https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/" scrolling="no" frameborder="no"></iframe>
-<script>
-  iFrameResize({
-    heightCalculationMethod: 'taggedElement'
-  });
-</script>
-
-```
 
 <iframe src="https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/" width="1024" height="900"> </iframe>
 
@@ -196,7 +166,7 @@ Make sure that I made it clear that I'm counting the number of times a character
 Finally, all deaths of characters should be [here](https://genius.com/Screen-genius-list-of-game-of-thrones-deaths-annotated).
 [^5]: See for example the IMDb data for the first episode [here](http://www.imdb.com/title/tt1480055/?ref_=ttep_ep1)
 [^6]: This list can be found [here](https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_characters)
-[^7]: This is, the number of times they appear to speak.
+[^7]: This is, the number of times they appear to talk. This is, I counted the pattern `name_character:` for each character and then cleaned the data to account for misspelling and different possible names of each character. 
 [^8]: _Figure 1_ shows the proportion of accumulated participations of alive characters in scripts. This is, once a character dies, his/her accumulated participations are removed from the total count. The exact computations can be seen in [script 12 the project](https://github.com/JosepER/GoT_public)  
 [^9]: Notice that I merged seasons 2 to 4 as we only have a total of 6 observed episodes in these three seasons. This fact, combined with the 'within season' patterns [later explained](#within_seasons), mean that estimates for these pooled seasons should be taken with a grain of salt.
 [^10]: This is, I applied bootstrap in the following way: I re-sampled 6 episodes of seasons 1, 5, 6 and 7 6,000 times, and then, for each of the 24,000 episodes in the re-sample I re-sampled the characters appearing in their scripts. The whole process can be seen in section 'Re-samples of episodes' of [script 16 of the project](https://github.com/JosepER/GoT_public).
