@@ -63,7 +63,7 @@ First, let's take a look at how many times each character participates in script
 
 While most characters appear to have the same importance during the whole series, certain characters have a raising importance. This is especially true in the 7th season, where the protagonism of main characters such as Jon Snow, Daenerys, Sansa and Jaimie Lanister raises quickly. This is related to what I explain in [the next section](#changes_in_patterns). The scripts also show a curious pattern of charaters with short fast rise and immediate death such as Ramsay Bolton and Stanis. 
 
-_Figure 1_ can be used to obtain more information on appearances of individual characters. [Here](https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/) Use the manual function of the Shiny app below and type in their names. Rembember however that valid scripts for most episodes for season 2, 3 and 4, plus the last episode of season 7 were not available.
+_Figure 1_ can be used to obtain more information on appearances of individual characters. You can access the Shiny app behind it to observe the graph in a separate tab of your browser through [this link](https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/). Use the manual function of the Shiny app below and type in their names. Rembember however that valid scripts for most episodes for season 2, 3 and 4, plus the last episode of season 7 were not available.
 
 
 <iframe src="https://josep-espasa.shinyapps.io/18_GoT_characters_appearances/" width="1024" height="900"> </iframe>
