@@ -132,7 +132,7 @@ The lower number of episodes in season 7 doesn't seem to explain the larger imba
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, out.size = '120%'}
 
-ggplotly(input_list_16$graph_resample_prop_most_important_characters_season)
+input_list_16$graph_resample_prop_most_important_characters_season
 
 ```
 
