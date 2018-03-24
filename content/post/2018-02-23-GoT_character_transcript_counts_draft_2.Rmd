@@ -23,7 +23,7 @@ options(knitr.kable.NA = '')
 
 ### Introduction
 
-My main reason to love Game of Thrones (GoT) is that is a serie with ruthless and unpredictable narratives. It shows a world with a large amount of rich and absorbing characters that are always on the edge between life and death. 
+My main reason to love Game of Thrones (GoT) is that is a show with ruthless and unpredictable narratives. It shows a world with a large amount of rich and absorbing characters that are always on the edge between life and death. 
 
 Criticism  sparked after the last two seasons were aired[^1]. The show seems to have become more fast-paced, spending less time in slowly-building complex stories and more in action-like scenes. This is especially true for the seventh season, which had less episodes (7 instead of previous 10) of slightly longer duration and depicted many gigantic battle scenes. Some reviews have also said that the 'body count' in this (currently) last season has exclusively come from unknown or rather less important characters and that almost every main character seems to have now a "plot armor"[^2]. This might have got to a point where deaths don't appear tragic any more as espectators empathise less with characters.
 
