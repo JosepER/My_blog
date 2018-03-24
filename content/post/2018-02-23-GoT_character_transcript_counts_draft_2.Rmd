@@ -147,11 +147,6 @@ input_list_16$graph_number_alive_characters_episode
 ```
 
 
-** TO DO:**
-Make sure that I made it clear that I'm counting the number of times a character speaks!
-
-**footnotes**
-
 [^1]: See for example [this article](https://www.theguardian.com/tv-and-radio/2017/aug/21/game-of-thrones-the-best-show-on-tv-just-became-the-silliest), [this one](https://www.theguardian.com/tv-and-radio/2017/jul/24/when-good-tv-goes-bad-game-of-thrones) or [this one](http://theweek.com/articles/719732/game-thrones-become-terrible-show). 
 [^2]: http://uk.ign.com/articles/2017/09/03/game-of-thrones-season-7-review
 [^3]: See for example this other network analysis performed by [Shirin Glander](https://shiring.github.io/networks/2017/05/15/got_final) or the articles produced using screen time of main characters the data that an IMDB user manually collected. An article using that data can be found [here](https://winteriscoming.net/2017/10/19/chart-screentime-game-of-thrones-top-100-characters/). The original data seems to have been deleted from the IMDB webpage but still remains available [here](https://shiring.github.io/networks/2017/05/15/got_final). 
