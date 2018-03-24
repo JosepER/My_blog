@@ -83,14 +83,15 @@ ggplotly(input_list_16$graph_character_appearances_episode)
 ```
 
 
-<br><br>
+<br><br><br><br>
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE}
 
 input_list_16$table_characters_season %>% 
   datatable(colnames = c("Season", "Characters IMDb", "Characters scipts"),
-            caption = "Table 1: Number of distinct characters that participated in each season.")
+            caption = "Table 1: Number of distinct characters that participated in each season.",
+            autoHideNavigation = T)
   
 ```
 
