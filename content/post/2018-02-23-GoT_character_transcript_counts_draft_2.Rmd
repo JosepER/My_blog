@@ -86,7 +86,6 @@ ggplotly(input_list_16$graph_character_appearances_episode)
 <br><br>
 
 
-
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE}
 
 input_list_16$table_characters_season %>% 
