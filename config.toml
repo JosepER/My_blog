@@ -56,7 +56,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "Contact"
     pre = "<i class='fa fa-phone fa-fw'></i>"
     weight = 4
-    url = "/contact/"
+    url = "mailto:jespasareig@gmail.com"
 
 [social]
   # Link your social networking accouns to the side menu

@@ -1,8 +1,0 @@
----
-title: "Methodological note for Analysing GoT scripts (1)"
-output: html_notebook
-editor_options: 
-  chunk_output_type: inline
----
-
-This is an example of note.
