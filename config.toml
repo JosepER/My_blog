@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "http://josepespasa.cat/"
 languageCode = "en-us"
 title = "Regression to the mean"
 theme = "blackburn"
@@ -57,6 +57,20 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     pre = "<i class='fa fa-phone fa-fw'></i>"
     weight = 4
     url = "mailto:jespasareig@gmail.com"
+    
+  [[menu.main]]
+    name = "Tags"
+    pre = "<i class='fa fa-tags fa-fw'></i>"
+    weight = 4
+    identifier = "tag"
+    url = "/tags/"
+
+[[menu.main]]
+    name = "Topics"
+    pre = "<i class='fa fa-folder fa-fw'></i>"
+    weight = 3
+    identifier = "topic"
+    url = "/topics/"
 
 [social]
   # Link your social networking accouns to the side menu
