@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Regression to the mean</title>
+    <link>http://josepespasa.cat/post/</link>
+    <description>Recent content in Posts on Regression to the mean</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>jespasareig@gmail.com (Josep Espasa Reig)</managingEditor>
+    <webMaster>jespasareig@gmail.com (Josep Espasa Reig)</webMaster>
+    
+	<atom:link href="http://josepespasa.cat/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How many people voted on the 1st of October independence referendum?</title>
+      <link>http://josepespasa.cat/post/2018-07-03_referendum_vote_article/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jespasareig@gmail.com (Josep Espasa Reig)</author>
+      <guid>http://josepespasa.cat/post/2018-07-03_referendum_vote_article/</guid>
+      <description>AcknowledgementsThis blog couldn’t have been writen without the scripts published by the authors of Sturgis et al 20171 and the responses to my questions provided by people at ‘Centre d’Estudis d’Opinió’ (CEO).
+How many people voted?The official data offered by the Catalan Government a few days after the independence referendum registered a turnout of almost 2.3 million votes or 43.03% of the census2. This count, however, missed the ballot boxes seized by Spanish police forces.</description>
+    </item>
+    
+    <item>
+      <title>You didn&#39;t like the 7th season of GoT? This might be why</title>
+      <link>http://josepespasa.cat/post/2018-02-23-got_character_transcript_counts_draft_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>jespasareig@gmail.com (Josep Espasa Reig)</author>
+      <guid>http://josepespasa.cat/post/2018-02-23-got_character_transcript_counts_draft_2/</guid>
+      <description>IntroductionMy main reason to love Game of Thrones (GoT) is that is a show with ruthless and unpredictable narratives. It shows a world with a large amount of rich and absorbing characters that are always on the edge between life and death.
+Criticism sparked after the last two seasons were aired1. The show seems to have become more fast-paced, spending less time in slowly build complex stories and more in action scenes.</description>
+    </item>
+    
+  </channel>
+</rss>
