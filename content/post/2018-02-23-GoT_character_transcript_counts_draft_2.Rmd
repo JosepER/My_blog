@@ -2,6 +2,7 @@
 title: "You didn't like the 7th season of GoT? This might be why"
 subtitle: 'My analyses of GoT scripts (1)'
 author: Josep Espasa Reig
+date: "23 Feb 2018, 15:00"
 output:
   html_document: default
 ---
