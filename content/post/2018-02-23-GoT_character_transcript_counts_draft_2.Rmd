@@ -2,8 +2,6 @@
 title: "You didn't like the 7th season of GoT? This might be why"
 subtitle: 'My analyses of GoT scripts (1)'
 author: Josep Espasa Reig
-tags: ["R", "web scraping", "Shiny", "bootstrap"]
-topics: "GoT"
 output:
   html_document: default
 ---

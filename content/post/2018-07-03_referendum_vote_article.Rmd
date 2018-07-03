@@ -2,8 +2,6 @@
 title: "How many people voted on the 1st of October independence referendum?"
 subtitle: "Using a bootstrap approach to variance estimateion on a quota sample survey."
 author: Josep Espasa Reig
-tags: ["R", "survey", "variance estimation", "bootstrap"]
-topics: "Referendum"
 output: html_document
 
 ---
