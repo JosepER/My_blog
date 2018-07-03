@@ -39,17 +39,13 @@ library(tidyverse)
 qual_col_pals <- brewer.pal.info[brewer.pal.info$category == 'qual',]
 col_vector <- unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
 
-p_1 <- read_rds(here("C:/Users/josep/Desktop/R/CEO_Public", 
-                     "outputs", "plots", "plot_vote_estimates_intervals_07.rds"))
+p_1 <- read_rds("C:/Users/josep/Desktop/R/CEO_Public/outputs/plots/plot_vote_estimates_intervals_07.rds")
 
-p_2 <- read_rds(here("C:/Users/josep/Desktop/R/CEO_Public", 
-                     "outputs", "plots", "plot_comparison_bootstrap_designs_07.rds"))
+p_2 <- read_rds("C:/Users/josep/Desktop/R/CEO_Public/outputs/plots/plot_comparison_bootstrap_designs_07.rds")
 
-t_1 <- read_rds(here("C:/Users/josep/Desktop/R/CEO_Public", 
-                     "outputs", "tables", "table_vote_estimates_intervals_07.rds"))
+t_1 <- read_rds("C:/Users/josep/Desktop/R/CEO_Public/outputs/tables/table_vote_estimates_intervals_07.rds")
 
-t_2 <- read_rds(here("C:/Users/josep/Desktop/R/CEO_Public", 
-                     "outputs", "tables", "table_comparison_bootstrap_designs_07.rds"))
+t_2 <- read_rds("C:/Users/josep/Desktop/R/CEO_Public/outputs/tables/table_comparison_bootstrap_designs_07.rds")
 
 p_1
 ```
