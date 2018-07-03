@@ -2,7 +2,6 @@ baseurl = "http://josepespasa.cat/"
 languageCode = "en-us"
 title = "Regression to the mean"
 theme = "blackburn"
-author = "JosepER"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
