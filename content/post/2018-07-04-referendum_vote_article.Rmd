@@ -126,7 +126,7 @@ t_1 %>%
   mutate(`Lower bound CI` = percent(round(`Lower bound CI`,3)),
          `Upper bound CI` = percent(round(`Upper bound CI`, 3))) %>%
    datatable(caption = "Table 1: Confidence intervals using bootstrap resamples with Quota design.",
-            autoHideNavigation = T)
+            autoHideNavigation = T, rownames = F)
 ```
 
 
@@ -150,7 +150,7 @@ This advantage in efficiency of the quota design seems to almost disappear once 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 t_2 %>%
      datatable(caption = "Table 1: Standard errors under different sampling designs.",
-            autoHideNavigation = T)
+            autoHideNavigation = T, rownames = F)
 
 ```
 
