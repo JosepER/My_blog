@@ -29,7 +29,7 @@ Even knowing that some ballot boxes were taken away by Spanish police forces, th
 rm(list = ls())
 
 library(scales)
-library(kableExtra)
+library(DT)
 library(magrittr)
 library(RColorBrewer)
 library(tidyverse)
@@ -125,10 +125,8 @@ Table 1 below shows that differences between the three types of confidence inter
 t_1 %>%
   mutate(`Lower bound CI` = percent(round(`Lower bound CI`,3)),
          `Upper bound CI` = percent(round(`Upper bound CI`, 3))) %>%
-  kable(caption = "Confidence intervals using bootstrap resamples with Quota design") %>%
-  kableExtra::kable_styling(bootstrap_options = c("striped", "hover"),
-                            full_width = T, position = "center")
-
+   datatable(caption = "Table 1: Confidence intervals using bootstrap resamples with Quota design.",
+            autoHideNavigation = T)
 ```
 
 
@@ -151,9 +149,8 @@ This advantage in efficiency of the quota design seems to almost disappear once 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 t_2 %>%
-  kable(caption = "Standard errors under different sampling designs") %>%
-  kableExtra::kable_styling(bootstrap_options = c("striped", "hover"),
-                            full_width = T, position = "center")
+     datatable(caption = "Table 1: Standard errors under different sampling designs.",
+            autoHideNavigation = T)
 
 ```
 

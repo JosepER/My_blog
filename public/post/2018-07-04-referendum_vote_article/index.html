@@ -229,7 +229,15 @@
 
 </div>
 
-  <script src="http://josepespasa.cat/rmarkdown-libs/kePrint/kePrint.js"></script>
+  <script src="http://josepespasa.cat/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="http://josepespasa.cat/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="http://josepespasa.cat/rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+<script src="http://josepespasa.cat/rmarkdown-libs/datatables-binding/datatables.js"></script>
+<link href="http://josepespasa.cat/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="http://josepespasa.cat/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="http://josepespasa.cat/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="http://josepespasa.cat/rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="http://josepespasa.cat/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
 
 
 <div id="acknowledgements" class="section level1">
@@ -302,59 +310,8 @@
 <li>Bootstrap standard percentile interval (Percentile): Uses the 2.5% (lower bound) and 97.5% (upper bound) percentiles of the bootstrap distribution of estimates.</li>
 <li>Bootstrap bias-corrected and accelerated interval (BCa): It is also based on percentiles from the bootstrap distribution of estimates, but these depend on the ‘acceleration’ and ‘bias-correction’. These changes are meant to correct deficiencies of the other bootstrap methods<a href="#fn17" class="footnoteRef" id="fnref17"><sup>17</sup></a>. Table 1 below shows that differences between the three types of confidence intervals computed are really small, meaning that the variance estimation doesn’t really depend on the exact method used. They all point at an estimated proportion of turnout in the province roughly between 50% and 57%. Again, this is way above the official proportion of 41% and thus difficult to believe. The fact that the confidence intervals are so distant from the official data would seem to discard sampling error as a main reason for the difference between official and survey estimates. In other words, it’s very unlikely that if the survey was repeated under the exact conditions, it would produce an estimate of turnout around 41%. Measurement error (i.e. people declaring that they voted when they actually didn’t) and/or a biased sample seem more plausible options of error for the CEO survey. A way of checking the later source of error would be to include further variables in the survey which can be benchmarked against official estimates.</li>
 </ul>
-<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
-<caption>
-<span id="tab:unnamed-chunk-2">Table 1: </span>Confidence intervals using bootstrap resamples with Quota design
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-Method
-</th>
-<th style="text-align:left;">
-Lower bound CI
-</th>
-<th style="text-align:left;">
-Upper bound CI
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-Normal
-</td>
-<td style="text-align:left;">
-50.7%
-</td>
-<td style="text-align:left;">
-56.8%
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Percentile
-</td>
-<td style="text-align:left;">
-50.8%
-</td>
-<td style="text-align:left;">
-56.9%
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-BCA
-</td>
-<td style="text-align:left;">
-50.6%
-</td>
-<td style="text-align:left;">
-56.8%
-</td>
-</tr>
-</tbody>
-</table>
+<div id="htmlwidget-1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","caption":"<caption>Table 1: Confidence intervals using bootstrap resamples with Quota design.<\/caption>","autoHideNavigation":true,"data":[["1","2","3"],["Normal","Percentile","BCA"],["50.7%","50.8%","50.6%"],["56.8%","56.9%","56.8%"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Method<\/th>\n      <th>Lower bound CI<\/th>\n      <th>Upper bound CI<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="comparison_designs" class="section level1">
 <h1>How much more efficient was the Quota sample?</h1>
@@ -363,55 +320,8 @@ BCA
 <p>The distributions in the upper graph compare 10,000 unweighted bootstrap estimates. We see that without quotas, the estimates are more disperse. The standard deviation of the distribution without quotas is 1.56% and that of the distribution with quotas is 1.44%. Thus, the estimated standard error using quota sample is 0.92 times what it would be if the survey didn’t use them. In survey statistics jargon, this ratio is usually called ‘design factor’. In terms of effective sample, this would mean that the initial sample of 968 respondents in Barcelona province obtained from a quota design would be as informative as ~1144 respondents obtained from design without quotas (SRS)<a href="#fn22" class="footnoteRef" id="fnref22"><sup>22</sup></a>.</p>
 <p><img src="http://josepespasa.cat/post/2018-07-04-referendum_vote_article_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>This advantage in efficiency of the quota design seems to almost disappear once the resamples are weighted to match population proportions in auxiliary variables. This can be seen in the lower graph of Figure 2 and summarised in Table 2. The ratio between the estimated SE of the design with quotas and that without these is close to 1, meaning that the gain in information would have been small, with a gain in effective sample size equivalent to 20 respondents. This is slightly surprising (although plausible) as the weights applied to bootstrap resamples under “SRS” design were slightly larger than those computed for resamples with quota designs.</p>
-<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
-<caption>
-<span id="tab:unnamed-chunk-4">Table 2: </span>Standard errors under different sampling designs
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-Design
-</th>
-<th style="text-align:right;">
-Estimated SE
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-SRS unweighted
-</td>
-<td style="text-align:right;">
-0.01564
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-SRS weighted (untrimmed)
-</td>
-<td style="text-align:right;">
-0.01568
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Quota unweighted
-</td>
-<td style="text-align:right;">
-0.01443
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Quota weighted (untrimmed)
-</td>
-<td style="text-align:right;">
-0.01551
-</td>
-</tr>
-</tbody>
-</table>
+<div id="htmlwidget-2" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2">{"x":{"filter":"none","caption":"<caption>Table 1: Standard errors under different sampling designs.<\/caption>","autoHideNavigation":true,"data":[["1","2","3","4"],["SRS unweighted","SRS weighted (untrimmed)","Quota unweighted","Quota weighted (untrimmed)"],[0.01564,0.01568,0.01443,0.01551]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Design<\/th>\n      <th>Estimated SE<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":2},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="summary-discussion-and-limitations" class="section level1">
 <h1>Summary, discussion and limitations</h1>
