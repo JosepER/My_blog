@@ -167,14 +167,12 @@ A limitation that wasn't addressed in this blog is the presence of missing value
 
 [^2]: Official data on the referendum participation can be found [here](https://estaticos.elperiodico.com/resources/pdf/4/3/1507302086634.pdf?_ga=2.11952052.1654533961.1528484435-1600052709.1528484435).
 
-[^3]: https://www.elperiodico.com/es/politica/20171006/resultados-referendum-cataluna-2017-6319340.
+[^3]: See his comments in Spanish [here](https://www.elperiodico.com/es/politica/20171006/resultados-referendum-cataluna-2017-6319340)
 
-[^4]: The technical specifications of the survey can be found here: 
-http://upceo.ceo.gencat.cat/wsceop/6408/Abstract%20in%20English%20-863.pdf (in English) 
-and with greater detail here:
-http://upceo.ceo.gencat.cat/wsceop/6408/Fitxa%20t%C3%A8cnica%20-863.pdf (in Catalan)
+[^4]: The technical specifications of the survey can be found [here](http://upceo.ceo.gencat.cat/wsceop/6408/Abstract%20in%20English%20-863.pdf) (in English) 
+and with greater detail [here](http://upceo.ceo.gencat.cat/wsceop/6408/Fitxa%20t%C3%A8cnica%20-863.pdf) (in Catalan)
 
-[^5]: See examples of research done on this issue in Holbrook,A.L. & Krosnick, J.A.(2009) Social Desirability Bias in Voter Turnout Reports: Tests Using the Item Count Technique. Available here: https://web.stanford.edu/dept/communication/faculty/krosnick/Turnout%20Overreporting%20-%20ICT%20Only%20-%20Final.pdf
+[^5]: See examples of research done on this issue in Holbrook,A.L. & Krosnick, J.A.(2009) Social Desirability Bias in Voter Turnout Reports: Tests Using the Item Count Technique. Available [here](https://web.stanford.edu/dept/communication/faculty/krosnick/Turnout%20Overreporting%20-%20ICT%20Only%20-%20Final.pdf)
 
 [^6]: Some of these designs are explained and commented in the report from the American Association for Public Opinion Research (AAPOR) on [Non-Probability Sampling](https://www.aapor.org/AAPOR_Main/media/MainSiteFiles/NPS_TF_Report_Final_7_revised_FNL_6_22_13.pdf)
 
@@ -194,17 +192,17 @@ http://upceo.ceo.gencat.cat/wsceop/6408/Fitxa%20t%C3%A8cnica%20-863.pdf (in Cata
 
 [^14]: The language that respondents first used when they were children.
 
-[^15]: See the table at the end of the technical report of the survey (In Catalan): http://upceo.ceo.gencat.cat/wsceop/6408/Fitxa%20t%C3%A8cnica%20-863.pdf
+[^15]: See the table at the end of the technical report of the survey [here](http://upceo.ceo.gencat.cat/wsceop/6408/Fitxa%20t%C3%A8cnica%20-863.pdf) (In Catalan) 
 
 [^16]: I trimmed the top 0.5% of weights for all samples and limited the ratio between the minimum and maximum weight in each resample to be equal to 8. The code for this can be found in [script 03_calibrate_bootstrap_resamples.R](https://github.com/JosepER/CEO_public/blob/master/scripts/03_calibrate_bootstrap_resamples.R)
 
 [^17]: This correction uses both the bootstrap and the jackknife resample estimates. For more details see pag 184 of Efron, B. & Tibshirani, R.J. (1993) An Introduction to the Bootstrap. New York: Chapman & Hall.
 
-[^18]: It is actually not a 'simple random sample' as there is no randomisation of respondents in a non-probability sample. However, I'll use this terminology for consistency with the presentation given by Kuha, J. & Sturgis, P. (2017) A bootstrap method for estimating the sampling variation in point estimates from quota samples. Available here: https://www.europeansurveyresearch.org/news/non-prob/INPS_06_Kuha.pdf
+[^18]: It is actually not a 'simple random sample' as there is no randomisation of respondents in a non-probability sample. However, I'll use this terminology for consistency with the presentation given by Kuha, J. & Sturgis, P. (2017) A bootstrap method for estimating the sampling variation in point estimates from quota samples. Available [here](https://www.europeansurveyresearch.org/news/non-prob/INPS_06_Kuha.pdf)
 
 [^19]: SEs have been calculated here as the standard deviation of the bootstrap estimates.
 
-[^20]: Presentation slides can be found here: https://www.europeansurveyresearch.org/news/non-prob/INPS_06_Kuha.pdf
+[^20]: Presentation slides can be found [here](https://www.europeansurveyresearch.org/news/non-prob/INPS_06_Kuha.pdf)
 
 [^21]: This is mentioned in page 19 of Hesterberg, T. (2014) What Teachers Should Know about the Bootstrap: Resampling in the Undergraduate Statistics Curriculum
 [available here](https://arxiv.org/pdf/1411.5279.pdf)
