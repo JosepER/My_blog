@@ -8,10 +8,30 @@
     <language>en-us</language>
     <managingEditor>jespasareig@gmail.com (Josep Espasa Reig)</managingEditor>
     <webMaster>jespasareig@gmail.com (Josep Espasa Reig)</webMaster>
-    <lastBuildDate>Thu, 05 May 2016 21:48:51 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 04 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://josepespasa.cat/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How many people voted on the 1st of October independence referendum?</title>
+      <link>http://josepespasa.cat/post/2018-07-04-referendum_vote_article/</link>
+      <pubDate>Wed, 04 Jul 2018 00:00:00 +0000</pubDate>
+      <author>jespasareig@gmail.com (Josep Espasa Reig)</author>
+      <guid>http://josepespasa.cat/post/2018-07-04-referendum_vote_article/</guid>
+      <description>AcknowledgementsThis blog couldn’t have been written without the scripts published by the authors of Sturgis et al 20171 and the responses to my questions provided by people at ‘Centre d’Estudis d’Opinió’ (CEO).
+How many people voted?The official data offered by the Catalan Government a few days after the independence referendum registered a turnout of almost 2.3 million votes or 43.03% of the census2. This count, however, missed the ballot boxes seized by Spanish police forces.</description>
+    </item>
+    
+    <item>
+      <title>You didn&#39;t like the 7th season of GoT? This might be why</title>
+      <link>http://josepespasa.cat/post/2018-02-23-got_character_transcript_counts_draft_2/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      <author>jespasareig@gmail.com (Josep Espasa Reig)</author>
+      <guid>http://josepespasa.cat/post/2018-02-23-got_character_transcript_counts_draft_2/</guid>
+      <description>IntroductionMy main reason to love Game of Thrones (GoT) is that is a show with ruthless and unpredictable narratives. It shows a world with a large amount of rich and absorbing characters that are always on the edge between life and death.
+Criticism sparked after the last two seasons were aired1. The show seems to have become more fast-paced, spending less time in slowly build complex stories and more in action scenes.</description>
+    </item>
     
     <item>
       <title>About me</title>
@@ -23,26 +43,6 @@
 About This Site
 This blog is built with blogdown and Hugo using the Blackburn theme.
 All blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License.</description>
-    </item>
-    
-    <item>
-      <title>How many people voted on the 1st of October independence referendum?</title>
-      <link>http://josepespasa.cat/post/2018-07-04-referendum_vote_article/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jespasareig@gmail.com (Josep Espasa Reig)</author>
-      <guid>http://josepespasa.cat/post/2018-07-04-referendum_vote_article/</guid>
-      <description>AcknowledgementsThis blog couldn’t have been written without the scripts published by the authors of Sturgis et al 20171 and the responses to my questions provided by people at ‘Centre d’Estudis d’Opinió’ (CEO).
-How many people voted?The official data offered by the Catalan Government a few days after the independence referendum registered a turnout of almost 2.3 million votes or 43.03% of the census2. This count, however, missed the ballot boxes seized by Spanish police forces.</description>
-    </item>
-    
-    <item>
-      <title>You didn&#39;t like the 7th season of GoT? This might be why</title>
-      <link>http://josepespasa.cat/post/2018-02-23-got_character_transcript_counts_draft_2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jespasareig@gmail.com (Josep Espasa Reig)</author>
-      <guid>http://josepespasa.cat/post/2018-02-23-got_character_transcript_counts_draft_2/</guid>
-      <description>IntroductionMy main reason to love Game of Thrones (GoT) is that is a show with ruthless and unpredictable narratives. It shows a world with a large amount of rich and absorbing characters that are always on the edge between life and death.
-Criticism sparked after the last two seasons were aired1. The show seems to have become more fast-paced, spending less time in slowly build complex stories and more in action scenes.</description>
     </item>
     
   </channel>

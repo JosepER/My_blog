@@ -21,13 +21,13 @@
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <link rel="stylesheet" href="http://josepespasa.cat/css/side-menu-old-ie.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="/css/side-menu.css">
+  <link rel="stylesheet" href="http://josepespasa.cat/css/side-menu.css">
   <!--<![endif]-->
 
-  <link rel="stylesheet" href="/css/blackburn.css">
+  <link rel="stylesheet" href="http://josepespasa.cat/css/blackburn.css">
 
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,6 +41,8 @@
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
   
   <script>hljs.initHighlightingOnLoad();</script>
   
@@ -64,7 +66,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="/">Blog</a>
+  <a class="pure-menu-heading brand" href="http://josepespasa.cat/">Blog</a>
 
 
   <div class="pure-menu">
@@ -72,19 +74,19 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="http://josepespasa.cat/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+          <a class="pure-menu-link" href="http://josepespasa.cat/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+          <a class="pure-menu-link" href="http://josepespasa.cat/about/"><i class='fa fa-user fa-fw'></i>About</a>
       
         </li>
       
@@ -216,7 +218,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>01 Jan 0001, 00:00</time>
+    <time>04 Jul 2018, 00:00</time>
   </div>
 
   
@@ -227,7 +229,7 @@
 
 </div>
 
-  <script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+  <script src="http://josepespasa.cat/rmarkdown-libs/kePrint/kePrint.js"></script>
 
 
 <div id="acknowledgements" class="section level1">
@@ -241,7 +243,7 @@
 <p>The CEO survey, collected data during the last two weeks of that month and used a quota sampling with sample allocation proportional to population estimates<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>. The sample size in three out of the four provinces was too small to compute reliable estimates. The sample size of the Province of Barcelona, however, was close to 1,000 respondents and should allow for a decent calculation with the methods presented below.</p>
 <p>According to the official information from the Catalan Government the province had a turnout of 41.2% or around 1.6 million votes. As shown in Figure 1, my estimate from CEO survey data would be that the turnout was most likely between 50.6% and 56.8%. This would mean that between 2 and 2.26 million people voted in this province.</p>
 <p>Even knowing that some ballot boxes were taken away by Spanish police forces, the difference between the official information and the CEO survey is large. Thus, estimates from the survey should be taken with a grain of salt. We know that people tend to lie about their participation in elections, stating that they voted when they actually didn’t<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a>. Moreover, a quota sample like the one used by CEO is based on assumptions that might have been violated in this case. These assumptions and the exact methods used to compute the estimates are explained in the next sections in a slightly more technical way. The <a href="#comparison_designs">last part of this blog</a> also compares the current design of the survey with simpler alternatives.</p>
-<p><img src="/post/2018-07-04-referendum_vote_article_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><img src="http://josepespasa.cat/post/2018-07-04-referendum_vote_article_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <p><em>Note: See section <a href="#estimates_of_turnout">‘Estimates of turnout in 1-O referendum’</a> below for details on the computation of these estimates.</em></p>
 </div>
 <div id="quota-sampling" class="section level1">
@@ -359,7 +361,7 @@ BCA
 <p>As an extra step of the analysis, I compared the estimated variance from the bootstrap samples using the quota design (seen in previous sections) with that of bootstrap samples assuming a “simple random sample” (SRS) design<a href="#fn18" class="footnoteRef" id="fnref18"><sup>18</sup></a><a href="#fn19" class="footnoteRef" id="fnref19"><sup>19</sup></a>. The latter is a mere resample with replacement from the initial survey respondents, with weights computed for each resample. The comparison of the properties of estimates computed assuming both designs should give us an insight of the theoretical ‘gains’ of using a quota sample instead of just interviewing the same number of people without quotas. This exercise is similar to what Kuha and Sturgis presented last year in the ESRA ‘Conference on Inference for Non-Probability Samples’<a href="#fn20" class="footnoteRef" id="fnref20"><sup>20</sup></a> and could be used to assess the impact of changes in design of surveys. For example, we could analyse the effect of using different variables in quotas and/or calibration steps. Alike procedures are also common for testing other sampling design changes such as how accurate surveys would be if the sample size increased or decreased<a href="#fn21" class="footnoteRef" id="fnref21"><sup>21</sup></a>.</p>
 <p>Figure 2 shows the distribution of bootstrap estimates by comparing the quota and “SRS” designs. Summary estimates for the variance of these distributions can be found in Table 2 below. The weights clearly pushed the estimates for vote on the referendum down. Comparing the upper and lower graphs, we see that the unweighted estimates are centred around 61%, while the weighted ones are around 54%. This means that the original sample underrepresented profiles of people that had lower propensity to vote in the referendum. It also means that the variables used in the weighting procedure (age crossed by place of birth and first language) are strongly related to the probability of people voting on the referendum. This won’t come as a great surprise for people with knowledge on Catalan politics.</p>
 <p>The distributions in the upper graph compare 10,000 unweighted bootstrap estimates. We see that without quotas, the estimates are more disperse. The standard deviation of the distribution without quotas is 1.56% and that of the distribution with quotas is 1.44%. Thus, the estimated standard error using quota sample is 0.92 times what it would be if the survey didn’t use them. In survey statistics jargon, this ratio is usually called ‘design factor’. In terms of effective sample, this would mean that the initial sample of 968 respondents in Barcelona province obtained from a quota design would be as informative as ~1144 respondents obtained from design without quotas (SRS)<a href="#fn22" class="footnoteRef" id="fnref22"><sup>22</sup></a>.</p>
-<p><img src="/post/2018-07-04-referendum_vote_article_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="http://josepespasa.cat/post/2018-07-04-referendum_vote_article_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>This advantage in efficiency of the quota design seems to almost disappear once the resamples are weighted to match population proportions in auxiliary variables. This can be seen in the lower graph of Figure 2 and summarised in Table 2. The ratio between the estimated SE of the design with quotas and that without these is close to 1, meaning that the gain in information would have been small, with a gain in effective sample size equivalent to 20 respondents. This is slightly surprising (although plausible) as the weights applied to bootstrap resamples under “SRS” design were slightly larger than those computed for resamples with quota designs.</p>
 <table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
